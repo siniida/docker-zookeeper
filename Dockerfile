@@ -24,7 +24,7 @@ EXPOSE 2181 2888 3888
 
 WORKDIR /opt/zookeeper
 
-ADD entry.sh /opt/zookeeper/bin/
+ADD entry.sh /
 
-ENTRYPOINT ["/opt/zookeeper/bin/entry.sh"]
+ENTRYPOINT ["/entry.sh"]
 CMD ["/opt/zookeeper/bin/zkServer.sh", "start-foreground"]
