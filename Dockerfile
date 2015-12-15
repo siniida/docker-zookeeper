@@ -7,7 +7,7 @@ RUN yum install -y tar
 RUN curl -L -O -b "oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/7u80-b15/jre-7u80-linux-x64.rpm
 RUN rpm -ivh jre-7u80-linux-x64.rpm && rm jre-7u80-linux-x64.rpm
 
-RUN curl http://ftp.tsukuba.wide.ad.jp/software/apache/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz | tar zx -C /opt
+RUN curl http://archive.apache.org/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz | tar zx -C /opt
 RUN ln -s /opt/zookeeper-3.4.6 /opt/zookeeper
 RUN mkdir /opt/zookeeper/data
 RUN chown -R root:root /opt/zookeeper-3.4.6
