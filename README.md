@@ -17,11 +17,11 @@ for gennai cluster. ([gennai.docker](https://github.com/siniida/gennai.docker))
     
     OPTIONS:
       --version, -v           print cluster.sh version.
-	  --help, -h              print this message.
-	  --ensamble, -e STRING   specifies ensamble name. (default: zk)
+      --help, -h              print this message.
+      --ensamble, -e STRING   specifies ensamble name. (default: zk)
     
     COMMAND:
-	  start             ensamble start.
+      start             ensamble start.
       stop              ensamble stop.
       status            print ensamble status.
       help COMMAND      print COMMAND help.
